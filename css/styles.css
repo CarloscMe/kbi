@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: rgb(251, 252, 252);    
+}
+
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.header{
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    cursor: alias;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+    font-size: 20px;
+    padding: 22px;
+    display: block;
+}
+
+#menu{
+    display: none;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.fondo{
+    background-image: url('../img/fondoh.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+  }
+
+  .principal{
+    max-width: 1500px;
+    display: flex;
+    padding: 9px;
+    margin: auto;
+    justify-content:space-around;
+    align-items:center;  
+    flex-wrap: wrap;
+    background-color: rgb(14, 13, 13);
+  }
+
+  .history{
+    color: rgba(241, 243, 243, 0.897);
+    text-shadow: 1px 1px #faf8f8ec;
+  }
+
+  .resumen{
+    padding: auto;
+    margin: auto;
+    color: rgb(242, 247, 252);
+    background-color: rgba(173, 172, 172, 0.336);
+    border-radius: 9px;
+  }
+
+  .dango{
+    width: 300px;
+    border-radius:35px;
+  }
+
+  .productos{
+    max-width: 1500px;
+    display: flex;
+    padding: 9px;
+    margin: auto;
+    justify-content:space-around;
+    align-items:center;  
+    flex-wrap: wrap;
+    min-height: 70vh;
+  }
+
+  .fnd{
+    background-image: url('../img/fondos.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;  
+  }
+
+  .products{
+    color: rgb(252, 253, 253);
+  }
+
+  .sushi{
+    width: 17em;
+    height: 13em;
+    border-radius: 25px;  
+  }
+
+.miso{
+    width: 17em;
+    height: 13em;
+    border-radius: 25px;  
+}
+
+.mochi{
+    width: 17em;
+    height: 13em;
+    border-radius: 25px;  
+}
+
+.servicios{
+    max-width: 1500px;
+    display: flex;
+    padding: 9px;
+    margin: auto;
+    justify-content: space-around;
+    align-items:center;  
+    flex-wrap: wrap; 
+    text-align: center;
+    background-color: rgba(7, 7, 7, 0.932);
+}
+
+.servi{
+    color: rgb(245, 242, 239);
+    text-shadow: 1px 2px 3px rgba(250, 249, 249, 0.918);
+}
+
+.somos{
+    color: rgb(246, 250, 250);
+    text-shadow: 1px 2px 3px rgba(250, 249, 249, 0.918);   
+}
+
+.reseñas{
+    max-width: 1500px;
+    display: flex;
+    padding: 9px;
+    margin: auto;
+    justify-content:space-around;
+    align-items:center;  
+    flex-wrap: wrap;
+    min-height: 70vh; 
+}
+
+.fin{
+    background-image: url('../img/fondou.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;  
+}
+
+.luis{
+    background-color: rgba(132, 134, 134, 0.082);
+    border-radius: 5px;
+    color: rgba(248, 248, 242, 0.925);
+    text-shadow: 1px 2px rgb(12, 12, 12);
+}
+
+.rade{
+    background-color: rgba(129, 129, 128, 0.219);
+    color: rgb(245, 249, 252);
+    border-radius: 5px;
+}
+
+.david{
+   background-color: rgba(129, 129, 128, 0.137);
+    color: rgb(232, 243, 253);
+    border-radius: 5px;
+}
+footer{
+    max-width: 1500px;
+    display: flex;
+    padding: 5px;
+    margin: auto;
+    justify-content:center;
+    align-items:center;  
+    flex-wrap: wrap;  
+    color: rgb(240, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.footer-social-icons {
+    display: flex;
+    align-items: flex-end;
+    margin: 9px; 
+}
+
+.footer-social-icons h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 9px;
+    display: flex;
+    flex-direction: row; 
+    gap: 15px; 
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #333; 
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #0073e6; 
+}
+
+@media(max-width: 991px){
+
+    .menu{
+        padding: 20px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #8b8a8a4f;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;   
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .header{
+        min-height: 0vh;
+    }
+
+    .fondo{
+        min-height: 50vh;
+    }
+
+   .principal{
+    flex-direction: column;
+    text-align: center;
+   }
+
+   .history {
+    margin-top: 10px;
+   }
+
+   .resumen{
+    margin-top: 10px ;
+   }
+
+   .dango{
+    margin-top: 10px;
+   }
+
+   .productos{
+    flex-direction: column;
+    text-align: center;
+    min-height: 0vh;
+   }
+   .fnd{
+    min-height: 50vh;
+   }
+
+   .products{
+    margin-top: 10px;
+   }
+   .sushi{
+    margin-top: 10px;
+   }
+
+   .ramen{
+    margin-top: 10px;
+   }
+
+   .mochi{
+    margin-top: 10px;
+    margin-bottom: 5px;
+   }
+
+.servicios{
+    flex-direction: column;
+    text-align: center;
+}
+
+.servi{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.somos{
+    margin-top: 10px;
+}
+
+.reseñas{
+    flex-direction: column;
+   text-align: center;
+   min-height: 0vh;
+}
+
+.fin{
+    min-height: 50vh;
+}
+
+.luis{
+    margin-top: 10px;
+}
+
+.rade{
+    margin-top: 10px;
+}
+
+.david{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.footer-social-icons {
+    flex-direction: row; 
+    justify-content: center; 
+}
+
+.social-icons {
+    flex-direction: row;
+    gap: 15px; 
+}
+}
