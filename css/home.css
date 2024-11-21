@@ -85,10 +85,12 @@ span{
 }
 
 .imagenes{
+    max-width: 1500px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center ;
-    margin: 10px;
+    flex-wrap: wrap;
+    margin: auto;
     padding: 9px;
 }
 
