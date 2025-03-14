@@ -2,7 +2,7 @@
 const usuarioGuardado = JSON.parse(localStorage.getItem("usuario"));
 
 if (usuarioGuardado) {
-    document.getElementById("nombreUsuario").textContent = usuarioGuardado.nombre;
+    document.getElementById("nombreUsuario").innerText = usuarioGuardado.nombre;
 } else {
     window.location.href = "../index.html"; // si no tiene seccion//
 }

@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    text-transform: capitalize;
 }
 
 html{
@@ -14,12 +15,11 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-a {
-    color: rgb(251, 252, 252);    
+a, a:link, a:visited {
+    color: rgb(4, 255, 255);    
 }
 
-.container{
-    max-width: 1500px;
+.menu-container{
     margin: 0 auto;
 }
 
@@ -70,7 +70,7 @@ a {
     background-attachment: fixed;
   }
 
-  .principal{
+  .historia{
     max-width: 1500px;
     display: flex;
     padding: 9px;
@@ -81,17 +81,13 @@ a {
     background-color: rgb(14, 13, 13);
   }
 
-  .history{
-    color: rgba(241, 243, 243, 0.897);
-    text-shadow: 1px 1px #faf8f8ec;
+  h2, h3{
+    color: #fff;
   }
 
   .resumen{
-    padding: auto;
-    margin: auto;
-    color: rgb(242, 247, 252);
-    background-color: rgba(173, 172, 172, 0.336);
-    border-radius: 9px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
   }
 
   .dango{
@@ -100,7 +96,6 @@ a {
   }
 
   .productos{
-    max-width: 1500px;
     display: flex;
     padding: 9px;
     margin: auto;
@@ -116,10 +111,6 @@ a {
     background-position: center; 
     background-repeat: no-repeat; 
     background-attachment: fixed;  
-  }
-
-  .products{
-    color: rgb(252, 253, 253);
   }
 
   .sushi{
@@ -141,7 +132,6 @@ a {
 }
 
 .servicios{
-    max-width: 1500px;
     display: flex;
     padding: 9px;
     margin: auto;
@@ -152,18 +142,12 @@ a {
     background-color: rgba(7, 7, 7, 0.932);
 }
 
-.servi{
-    color: rgb(245, 242, 239);
-    text-shadow: 1px 2px 3px rgba(250, 249, 249, 0.918);
-}
-
 .somos{
     color: rgb(246, 250, 250);
     text-shadow: 1px 2px 3px rgba(250, 249, 249, 0.918);   
 }
 
 .reseñas{
-    max-width: 1500px;
     display: flex;
     padding: 9px;
     margin: auto;
@@ -200,9 +184,8 @@ a {
     border-radius: 5px;
 }
 footer{
-    max-width: 1500px;
     display: flex;
-    padding: 5px;
+    padding: 10px;
     margin: auto;
     justify-content:center;
     align-items:center;  
@@ -268,15 +251,11 @@ footer{
         display: initial;
     }
 
-    .header{
-        min-height: 0vh;
-    }
-
-    .fondo{
+    .header-fondo{
         min-height: 50vh;
     }
 
-   .principal{
+   .historia{
     flex-direction: column;
     text-align: center;
    }
