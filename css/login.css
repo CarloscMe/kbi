@@ -1,103 +1,97 @@
+:root{
+  --primary-color: rgb(3, 141, 255);
+}
+
 * {
     box-sizing: border-box;
+    text-decoration: none;
     margin: 0;
     padding: 0;
+    text-transform: capitalize;
   }
   
   body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffee06;
+  }
+
+  h2{
+    text-align: center;
+    color: var(--primary-color);
   }
   
   #loginForm {
+    border: 1px solid #10e0e7;
+    border-radius: 10px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #0e0d0de1;
-    border: 1px solid #119960;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(26, 95, 128, 0.1);
+    gap: 40px;
+    margin: 50px auto;
     max-width: 400px;
-    margin: 40px auto;
   }
-  
-  label {
-    margin-bottom: 10px;
-    font-weight: bold;
-    font-size: 14px;
+
+  label{
+    color: var(--primary-color);
+  }
+
+  fieldset{
+    border: none;
   }
   
   input {
+    background-color: transparent;
     padding: 10px;
-    border: 1px solid #153386;
-    border-radius: 5px;
-    width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 15px;
-  }
-
-  input[type=email]:focus{
-    background-color: rgba(194, 197, 197, 0.911);
-  }
-
-  input[type=password]:focus{
-    background-color: rgba(194, 197, 197, 0.911); ;
-  }
-  
-  button[type="submit"] {
-    background-color: #110e94;
-    color: #fff;
-    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-bottom: 1px solid var(--primary-color) ;
+    width: 100%;
+  }
+
+  button{
+    background-color: var(--primary-color);
+    color: #fff;
+    width: 70%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
     cursor: pointer;
-    font-size: 14px;
+    margin: auto;
+    letter-spacing: 2px;
+    transition: background 2s, color 2s;
   }
   
-  button[type="submit"]:hover {
-    background-color: #28c8ce;
+  button:hover {
+    color: #000;
+    background-color: #00ff6a;
   }
   
   p {
+    margin-top: 5px;
+    color: var(--primary-color);
     text-align: center;
-    font-size: 14px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #1eeb28e5;
   }
   
   a:hover {
     color: #12a9bd;
+    text-decoration: underline;
+  }
+
+  input:focus-visible{
+    outline: none;
   }
   
-  @media (max-width: 480px) {
+  @media (max-width: 800px) {
     #loginForm {
       padding: 15px;
-      border: none;
-      box-shadow: none;
       max-width: 90%;
-    }
-  
-    label {
-      margin-bottom: 8px;
-      font-size: 13px;
     }
   
     input {
       padding: 8px;
-      font-size: 13px;
     }
   
-    button[type="submit"] {
+    button{
       padding: 8px 15px;
-      font-size: 13px;
     }
   
-    p {
-      font-size: 12px;
-    }
   }
   

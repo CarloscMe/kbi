@@ -3,38 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrate</title>
+    <title>Registro</title>
     <link rel="stylesheet" href="../css/registro.css">
-    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/registro.png" type="image/png">
 </head>
 <body>
-    <h2>Formulario de Registro</h2>
+    
     <form id="registroForm">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" required placeholder="ingresar nombre">
-        <br><br>
 
-        <label for="apellido">Apellido:</label>
-        <input type="text" class="apellido" id="apellido" placeholder="ingresar apellido">
-        <br><br>
+        <h2>Formulario de Registro</h2>
 
+        <fieldset>
+            <label for="nombre">
+                Nombre
+                <input type="text" name="nombre" id="nombre" required placeholder="ingresa tu nombre">
+            </label>
+        </fieldset>
+       
+        <fieldset>
+            <label for="correo">
+                Correo electrónico
+                <input type="email" name="correo" id="correo" required placeholder="correo electrónico">
+            </label>
+        </fieldset>
 
-        <label for="genero">Género:</label>
-        <select id="genero" name="genero">
-            <option value="masculino">Masculino</option>
-            <option value="femenino">Femenino</option>
-            <option value="otro">Otro</option>
-        </select><br><br>
+        <fieldset>
+            <label for="genero">   
+                Género
+                <select id="genero" name="genero" required>
+                    <option value="" disabled selected>elige tu genero</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </label>
+        </fieldset>
+  
+        <fieldset>
+            <label for="contrasena">
+                Contraseña
+                <input type="password" name="contraseña" id="contrasena" required placeholder="contraseña">
+            </label>
+        </fieldset>
 
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" id="correo" required placeholder="correo electrónico">
-        <br><br>
-
-
-        <label for="contrasena">Contraseña:</label>
-        <input type="password" id="contrasena" required placeholder="contraseña">
-        <br><br>
         <button type="submit">Registrar</button>
+
     </form>
 
     <script src="../js/registro.js"></script>

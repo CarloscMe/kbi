@@ -1,48 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #e2f8ea;
-    color: rgba(7, 120, 185, 0.699);
   }
   
   #registroForm {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #010300dc;
-    border: 1px solid #e211ae;
+    gap: 20px;
+    padding: 50px;
+    border: 1px solid  #00ff6a;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(92, 17, 17, 0.1);
     max-width: 400px;
-    margin: 40px auto;
+    margin: 50px auto;
   }
-  
-  label {
-    margin-bottom: 10px;
-    font-weight: bold;
+
+  h2{
+    text-align: center;
+  }
+
+  fieldset{
+    border: none;
+  }
+
+  option{
+    color: #fff;
+    background-color: #000;
   }
   
   input, select {
+    border: none;
+    border-bottom: 1px solid rgb(94, 255, 0);
     padding: 10px;
-    border: 1px solid #110b63;
-    border-radius: 5px;
     width: 100%;
-    box-sizing: border-box;
   }
 
-  input[type=text]:focus{
-    background-color: rgba(243, 246, 247, 0.74);
-  }
-
-  input[type=email]:focus{
-    background-color: rgba(243, 246, 247, 0.74);;
-  }
-
-  input[type=password]:focus{
-    background-color: rgba(243, 246, 247, 0.74);;
-  }
-  
-  button[type="submit"] {
+  button{
     background-color: #0e1ca0c4;
     color: #f3f3f3;
     padding: 10px 20px;
@@ -51,28 +49,24 @@ body {
     cursor: pointer;
   }
   
-  button[type="submit"]:hover {
+  button:hover {
     background-color: #10b7bd;
   }
+
+  input, select:focus-visible{
+    outline: none;
+  }
   
-  @media (max-width: 480px) {
+  @media (max-width: 800px) {
     #registroForm {
       padding: 10px;
-      border: none;
-      box-shadow: none;
-    }
-    
-    label {
-      margin-bottom: 5px;
-      font-size: 14px;
     }
     
     input, select {
       padding: 5px;
-      font-size: 14px;
     }
     
-    button[type="submit"] {
+    button{
       padding: 5px 10px;
       font-size: 14px;
     }

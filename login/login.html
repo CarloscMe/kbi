@@ -3,25 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>inicio de seccion</title>
+    <title>inicio de sesion</title>
     <link rel="stylesheet" href="../css/login.css">
     <link rel="shortcut icon" href="../img/singup.png" type="image/png">
 </head>
 <body>
-    <h2>Iniciar sesión</h2>
+   
     <form id="loginForm">
-        <label for="correoLogin">Correo electrónico:</label>
-        <input type="email" id="correoLogin" required placeholder="correo electrónico">
-        <br><br>
 
-        <label for="contrasenaLogin">Contraseña:</label>
-        <input type="password" id="contrasenaLogin" required placeholder="contraseña">
-        <br><br>
+        <h2>Iniciar sesión</h2>
 
+        <fieldset>
+            <label for="correoLogin">
+                Correo electrónico
+                <input type="email" name="correoLogin" id="correoLogin" required placeholder="ingresa el correo">
+            </label>
+        </fieldset>
+        
+        
+         <fieldset>
+            <label for="contrasenaLogin">
+                Contraseña
+                <input type="password" name="contrasenaLogin" id="contrasenaLogin" required placeholder="ingresa la contraseña">
+            </label>
+         </fieldset>
+      
         <button type="submit">Iniciar sesión</button>
-    </form>
 
-    <p>no tienes cuenta <a href="./registro.html">registrar</a></p>
+        <p>no tienes cuenta <a href="./registro.html">registrar</a></p>
+
+    </form>
 
     <script src="../js/login.js"></script>
 
