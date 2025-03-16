@@ -16,48 +16,30 @@ body{
 }
 
 a, a:link, a:visited {
-    color: rgb(4, 255, 255);    
-}
-
-.menu-container{
-    margin: 0 auto;
+    color: rgb(255, 254, 254);    
 }
 
 .header{
-    min-height: 70vh;
+    min-height: 70dvh;
+    width: 100%;
+}
+
+.navbar{
     display: flex;
+    justify-content: flex-end;
     align-items: center;
 }
 
-.menu{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+ul{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo{
-    font-size: 24px;
-    text-transform: uppercase;
-    cursor: alias;
-}
-
-.menu .navbar ul li {
-    position: relative;
-    float: left;
-    font-size: 20px;
-    padding: 22px;
-    display: block;
+    justify-content: space-evenly;  
 }
 
 #menu{
     display: none;
 }
 
-.menu label {
+label {
     cursor: pointer;
     display: none;
 }
@@ -85,7 +67,7 @@ a, a:link, a:visited {
     color: #fff;
   }
 
-  .resumen{
+  .historia-item{
     color: #fff;
     border-bottom: 1px solid #fff;
   }
@@ -112,24 +94,6 @@ a, a:link, a:visited {
     background-repeat: no-repeat; 
     background-attachment: fixed;  
   }
-
-  .sushi{
-    width: 17em;
-    height: 13em;
-    border-radius: 25px;  
-  }
-
-.miso{
-    width: 17em;
-    height: 13em;
-    border-radius: 25px;  
-}
-
-.mochi{
-    width: 17em;
-    height: 13em;
-    border-radius: 25px;  
-}
 
 .servicios{
     display: flex;
@@ -226,25 +190,14 @@ footer{
 
 @media(max-width: 991px){
 
-    .menu{
-        padding: 20px;
-    }
-
-    .menu label{
+    label{
         display: initial;
     }
 
-    .menu .navbar {
+    .navbar {
         position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #8b8a8a4f;
         display: none;
-    }
-
-    .menu .navbar ul li{
-        width: 100%;   
+        color: azure;
     }
 
     #menu:checked ~ .navbar{
@@ -264,7 +217,7 @@ footer{
     margin-top: 10px;
    }
 
-   .resumen{
+   .historia-item{
     margin-top: 10px ;
    }
 

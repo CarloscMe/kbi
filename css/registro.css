@@ -22,6 +22,11 @@ body {
 
   h2{
     text-align: center;
+    color: #00ff6a;
+  }
+
+  label{
+    color:  #1eff00;
   }
 
   fieldset{
@@ -35,22 +40,27 @@ body {
   
   input, select {
     border: none;
+    background-color: transparent;
     border-bottom: 1px solid rgb(94, 255, 0);
     padding: 10px;
     width: 100%;
   }
 
   button{
-    background-color: #0e1ca0c4;
-    color: #f3f3f3;
-    padding: 10px 20px;
+    width: 50%;
+    margin: auto;
+    background-color: #00ff6a;
+    color: #000;
+    padding: 10px;
     border: none;
-    border-radius: 5px;
+    transition: background 2s, color 2s;
+    border-radius: 20px;
     cursor: pointer;
   }
   
   button:hover {
-    background-color: #10b7bd;
+   background: #21bda8;
+   color: #fff;
   }
 
   input, select:focus-visible{
@@ -59,16 +69,16 @@ body {
   
   @media (max-width: 800px) {
     #registroForm {
-      padding: 10px;
+      padding: 15px;
+      max-width: 90%;
     }
     
     input, select {
-      padding: 5px;
+      padding: 8px;
     }
     
     button{
       padding: 5px 10px;
-      font-size: 14px;
     }
   }
   
