@@ -1,4 +1,4 @@
-* {
+* {                              /* despues le hago un modularizado en si se repite un poco el patron de diseño*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
