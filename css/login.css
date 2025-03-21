@@ -3,7 +3,7 @@
 }
 
 * {
-    box-sizing: border-box;
+    box-sizing: border-box;  /* igual*/
     text-decoration: none;
     margin: 0;
     padding: 0;
@@ -11,11 +11,12 @@
   }
   
   body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; /* igual*/
   }
 
   h2{
-    text-align: center;
+    text-align: center;            /* igual solo que el color diferente */
+    text-align: center;      
     color: var(--primary-color);
   }
   
@@ -23,7 +24,7 @@
     border: 1px solid #10e0e7;
     border-radius: 10px;
     padding: 50px;
-    display: flex;
+    display: flex;                /* igual solo que el gap es diferente y el color del border */
     flex-direction: column;
     gap: 40px;
     margin: 50px auto;
@@ -31,18 +32,18 @@
   }
 
   label{
-    color: var(--primary-color);
+    color: var(--primary-color);      /* diferente por el color es necesario usar clase */
   }
 
   fieldset{
-    border: none;
+    border: none;   /* igual */
   }
   
   input {
     background-color: transparent;
     padding: 10px;
     border: none;
-    border-bottom: 1px solid var(--primary-color) ;
+    border-bottom: 1px solid var(--primary-color) ;  /* igual solo le cambia el color al border */
     width: 100%;
   }
 
@@ -52,8 +53,8 @@
     width: 70%;
     padding: 10px;
     border-radius: 20px;
-    border: none;
-    cursor: pointer;
+    border: none;                /* propiedades con mismo valor: border none, cursor padding margin border radiues y transition */
+    cursor: pointer;                                                
     margin: auto;
     letter-spacing: 2px;
     transition: background 2s, color 2s;
@@ -76,7 +77,7 @@
   }
 
   input:focus-visible{
-    outline: none;
+    outline: none;        /* igual*/
   }
   
   @media (max-width: 800px) {
@@ -87,7 +88,7 @@
   
     input {
       padding: 8px;
-    }
+    }                        /* en el responsive lo unico diferente el button */
   
     button{
       padding: 8px 15px;
