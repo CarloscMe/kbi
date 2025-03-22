@@ -9,26 +9,26 @@
 </head>
 <body>
     
-    <form id="registroForm">
+    <form class="form form--registro" id="registroForm">
 
-        <h2>Formulario de Registro</h2>
+        <h2 class="form__title title--registro">Formulario de Registro</h2>
 
         <fieldset>
-            <label for="nombre">
+            <label class="form__label label--registro" for="nombre">
                 Nombre
-                <input type="text" name="nombre" id="nombre" required placeholder="ingresa tu nombre">
+                <input type="text" name="nombre" class="form__input input--registro" id="nombre" required placeholder="ingresa tu nombre">
             </label>
         </fieldset>
        
         <fieldset>
-            <label for="correo">
+            <label class="form__label label--registro" for="correo">
                 Correo electrónico
-                <input type="email" name="correo" id="correo" required placeholder="correo electrónico">
+                <input type="email" name="correo" class="form__input input--registro" id="correo" required placeholder="correo electrónico">
             </label>
         </fieldset>
 
         <fieldset>
-            <label for="genero">   
+            <label class="form__label label--registro" for="genero">   
                 Género
                 <select id="genero" name="genero" required>
                     <option value="" disabled selected>elige tu genero</option>
@@ -40,13 +40,13 @@
         </fieldset>
   
         <fieldset>
-            <label for="contrasena">
+            <label class="form__label label--registro" for="contrasena">
                 Contraseña
-                <input type="text" name="contraseña" id="contrasena" required placeholder="contraseña">
+                <input type="text" name="contraseña" class="form__input input--registro" id="contrasena" required placeholder="contraseña">
             </label>
         </fieldset>
 
-        <button type="submit">Registrar</button>
+        <button type="submit" class="form__button button--registro">Registrar</button>
 
     </form>
 

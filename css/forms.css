@@ -1,0 +1,127 @@
+:root{
+    --primary-color: rgb(3, 141, 255);
+    --secundary-color:  #00ff6a;
+    --third-color:  #1eff00; 
+    --login-color:  #10e0e7;
+    --border-color:  rgb(94, 255, 0);     /* estilos generales el root el universal html y body */
+    --hover-color:  #21bda8;
+  }
+
+* {
+    box-sizing: border-box; 
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif; 
+  }
+
+  .form{
+    display: flex;                
+    flex-direction: column;
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 10px;
+    max-width: 400px;
+    border: 1px solid var(--login-color);
+    gap: 40px;
+  }
+
+  .form--registro{
+    gap: 20px;
+    border: 1px solid var(--secundary-color);
+  }
+
+  .form__title{
+    text-align: center;
+    color: var(--primary-color);
+  }
+
+  .title--registro{
+    color: var(--secundary-color); 
+  }
+
+  fieldset{
+    border: none;   
+  }
+
+  .form__label{
+    color: var(--primary-color); 
+  }
+
+  .label--registro{
+    color: var(--third-color);
+  }
+
+  .form__input , select{
+    width: 100%;
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+  }
+
+  .input--registro , select{
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  option{
+    color: #fff;
+    background-color: #000;
+  }
+
+  input, select:focus-visible{
+    outline: none;                     
+  }
+
+  .form__button{
+    border: none; 
+    cursor: pointer;
+    padding: 10px;
+    margin: auto;
+    border-radius: 20px;
+    transition: background 2s, color 2s;
+    letter-spacing: 2px;
+    background-color: var(--primary-color);
+    color: #fff;
+    width: 70%;
+  }
+
+  .button--registro{
+    background-color: var(--secundary-color);
+    width: 50%;
+    color: #000;
+  }
+
+  .form__button:hover{
+    color: #000;
+    background-color: var(--secundary-color);
+  }
+
+  .button--registro:hover{
+    background: var(--hover-color);
+    color: #fff;
+  }
+
+  @media (max-width: 800px){
+
+    .form{
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    input, select {
+        padding: 8px;
+    }
+    
+    .form__button{
+        padding: 8px 15px;
+    }
+
+    .button--registro{
+        padding: 5px 10px;
+    }
+
+  }

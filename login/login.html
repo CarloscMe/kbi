@@ -9,26 +9,26 @@
 </head>
 <body>
    
-    <form id="loginForm">
+    <form class="form" id="loginForm">
 
-        <h2>Iniciar sesión</h2>
+        <h2 class="form__title">Iniciar sesión</h2>
 
         <fieldset>
-            <label for="correoLogin">
+            <label class="form__label" for="correoLogin">
                 Correo electrónico
-                <input type="email" name="correoLogin" id="correoLogin" required placeholder="ingresa el correo">
+                <input type="email" name="correoLogin" class="form__input" id="correoLogin" required placeholder="ingresa el correo">
             </label>
         </fieldset>
         
         
          <fieldset>
-            <label for="contrasenaLogin">
+            <label class="form__label" for="contrasenaLogin">
                 Contraseña
-                <input type="password" name="contrasenaLogin" id="contrasenaLogin" required placeholder="ingresa la contraseña">
+                <input type="password" name="contrasenaLogin" class="form__input" id="contrasenaLogin" required placeholder="ingresa la contraseña">
             </label>
          </fieldset>
       
-        <button type="submit">Iniciar sesión</button>
+        <button type="submit" class="form__button">Iniciar sesión</button>
 
         <p>no tienes cuenta <a href="./registro.html">registrar</a></p>
 
