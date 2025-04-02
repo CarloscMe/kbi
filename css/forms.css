@@ -105,6 +105,17 @@
     color: #fff;
   }
 
+  p{
+    margin-top: 5px;
+    color: var(--primary-color);
+    text-align: center;
+  }
+
+  a:hover {
+    color: #12a9bd;
+    text-decoration: underline;
+  }
+
   @media (max-width: 800px){
 
     .form{
