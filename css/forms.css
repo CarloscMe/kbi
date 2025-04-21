@@ -44,6 +44,7 @@
   }
 
   fieldset{
+    position: relative;
     border: none;   
   }
 
@@ -114,6 +115,21 @@
   a:hover {
     color: #12a9bd;
     text-decoration: underline;
+  }
+
+  .mostrar{
+    text-decoration: underline;
+    cursor: pointer;
+    user-select: none;
+    color: var(--primary-color);
+    position: absolute;
+    z-index: 10;
+    bottom: 20px;
+    right: 6px;
+  }
+
+  .mostrar--registro{
+    color: var(--secundary-color);
   }
 
   @media (max-width: 800px){

@@ -1,3 +1,21 @@
+const mostrar = document.querySelector(".mostrar");
+const input = document.querySelector('input[type="password"]')
+let visible = false;
+
+mostrar.addEventListener("click",()=>{
+    visible = !visible;
+
+    if(visible){
+     mostrar.textContent = "ocultar"
+     input.type = "text"
+     
+    }
+    else{
+        mostrar.textContent = "mostrar"
+        input.type = "password"
+    }
+})
+
 document.getElementById("loginForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
