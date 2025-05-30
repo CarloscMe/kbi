@@ -1,3 +1,7 @@
+:root{
+    --dark-color: #1f1f1f;
+}
+
 * {                              /* despues le hago un modularizado en si se repite un poco el patron de diseño*/
     margin: 0;
     padding: 0;
@@ -24,23 +28,24 @@ a, a:link, a:visited {
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
     min-height: 70dvh;
     width: 100%;
     background: url('../img/fondoh.jpg') center/cover no-repeat fixed;
 }
 
-h1{
-    flex-grow: 3;
+.navbar{
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.navbar{
-    flex-grow: 1;
+h1{
+    flex-grow: 2;
 }
 
 .navbar__item{
+    flex-grow: 1;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -51,13 +56,13 @@ h1{
     display: none;
 }
 
-.historia {
+.info {
     min-height: 30dvh;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: #111111;
+    background: var(--dark-color);
 }
 
 .historia__item {
@@ -70,7 +75,7 @@ h1{
     border-radius: 35px;
 }
 
-.productos {
+.info-2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,24 +84,10 @@ h1{
     background: url('../img/fondos.jpg') center/cover no-repeat fixed;
 }
 
-.servicios {
-    width: 100%;
-    min-height: 30dvh;
-    display: flex;
+.items--info {
     justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    background: #111111;
-}
-
-.reseñas {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
-    min-height: 70vh;
     background: url('../img/fondou.jpg') center/cover no-repeat fixed;
-
 }
 
 .reseñas__items {
@@ -107,8 +98,9 @@ h1{
 }
 
 footer {
-    padding: 10px;
-    background-color: black;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--dark-color);
 }
 
 @media(max-width: 800px) {
@@ -117,28 +109,26 @@ footer {
         display: initial;
     }
 
-    .navbar {
+    .navbar__item {
         position: absolute;
-        right: 0;
-        top: 50px;
+        left: 0;
+        top: 70px;
         width: 100%;
-        background: #0000004f;
+        background:  #0000004f;
+        flex-direction: column;
+        align-items: start;
         display: none;
     }
 
-     .navbar__item{
+    li{
         margin: 10px 0 10px 10px;
-        gap: 50px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-     }
-
-    #menu:checked~.navbar {
-        display: initial;
     }
 
-    .historia, .servicios, .reseñas {
+    #menu:checked~.navbar__item {
+        display: flex;
+    }
+
+    .info, .info-2 {
         flex-direction: column;
         text-align: center;
     }
